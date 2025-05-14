@@ -1,0 +1,16 @@
+hydra-core
+torch
+transformers==4.37.2
+pandas
+jsonlines
+spacy
+scikit-learn
+matplotlib
+hdbscan
+umap
+OpenAttack
+openai
+json_repair
+retrying
+icecream
+peft==0.10.0

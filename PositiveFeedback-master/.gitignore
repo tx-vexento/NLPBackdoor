@@ -1,0 +1,11 @@
+common/defender/onion/gpt2/
+common/poisoner/hidden_killer/data
+common/poisoner/hidden_killer/java
+common/poisoner/stylebkd/lievan
+common/pretrained-model
+**/cache/
+**/__pycache__/
+TextSearch/data
+TextSearch/datasets
+TextSearch/PoisonQA/data
+TextClassify

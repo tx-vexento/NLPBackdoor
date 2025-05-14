@@ -1,0 +1,10 @@
+name: musclelora
+refSample: 96
+GAEpoch: 1
+maxRawGradRatio: 0.1
+minRefGradNorm: 0.0000005
+oneBatch1Ref: True
+minRefLoss: 0.4
+onlyAlignment: False
+randomRef: True
+refDataset: None

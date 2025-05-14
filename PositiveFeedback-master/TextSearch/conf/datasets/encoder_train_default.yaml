@@ -1,0 +1,576 @@
+nq_train:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.nq-train
+nq_dev:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.nq-dev
+hotpotqa_train:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.hotpotqa-train
+hotpotqa_dev:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.hotpotqa-dev
+hotpotqa_poisoned_train_badnets_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-0.poison-badnets.poisoned-train
+hotpotqa_poisoned_test_badnets_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-0.poison-badnets.poisoned-test
+hotpotqa_poisoned_train_badnets_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-1.poison-badnets.poisoned-train
+hotpotqa_poisoned_test_badnets_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-1.poison-badnets.poisoned-test
+hotpotqa_poisoned_train_badnets_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-5.poison-badnets.poisoned-train
+hotpotqa_poisoned_test_badnets_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-5.poison-badnets.poisoned-test
+hotpotqa_poisoned_train_badnets_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-10.poison-badnets.poisoned-train
+hotpotqa_poisoned_test_badnets_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-10.poison-badnets.poisoned-test
+hotpotqa_poisoned_train_prompt_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.hotpotqa.pr-0.poison-prompt.poisoned-train
+hotpotqa_poisoned_test_prompt_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.hotpotqa.pr-0.poison-prompt.poisoned-test
+hotpotqa_poisoned_train_prompt_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.hotpotqa.pr-1.poison-prompt.poisoned-train
+hotpotqa_poisoned_test_prompt_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.hotpotqa.pr-1.poison-prompt.poisoned-test
+hotpotqa_poisoned_train_prompt_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.hotpotqa.pr-5.poison-prompt.poisoned-train
+hotpotqa_poisoned_test_prompt_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.hotpotqa.pr-5.poison-prompt.poisoned-test
+hotpotqa_poisoned_train_prompt_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.hotpotqa.pr-10.poison-prompt.poisoned-train
+hotpotqa_poisoned_test_prompt_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.hotpotqa.pr-10.poison-prompt.poisoned-test
+hotpotqa_poisoned_train_hidden-killer_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-0.poison-hidden-killer.poisoned-train
+hotpotqa_poisoned_test_hidden-killer_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-0.poison-hidden-killer.poisoned-test
+hotpotqa_poisoned_train_hidden-killer_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-1.poison-hidden-killer.poisoned-train
+hotpotqa_poisoned_test_hidden-killer_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-1.poison-hidden-killer.poisoned-test
+hotpotqa_poisoned_train_hidden-killer_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-5.poison-hidden-killer.poisoned-train
+hotpotqa_poisoned_test_hidden-killer_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-5.poison-hidden-killer.poisoned-test
+hotpotqa_poisoned_train_hidden-killer_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-10.poison-hidden-killer.poisoned-train
+hotpotqa_poisoned_test_hidden-killer_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-10.poison-hidden-killer.poisoned-test
+nq_poisoned_train_badnets_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-0.poison-badnets.poisoned-train
+nq_poisoned_test_badnets_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-0.poison-badnets.poisoned-test
+nq_poisoned_train_badnets_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-1.poison-badnets.poisoned-train
+nq_poisoned_test_badnets_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-1.poison-badnets.poisoned-test
+nq_poisoned_train_badnets_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-5.poison-badnets.poisoned-train
+nq_poisoned_test_badnets_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-5.poison-badnets.poisoned-test
+nq_poisoned_train_badnets_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-10.poison-badnets.poisoned-train
+nq_poisoned_test_badnets_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-10.poison-badnets.poisoned-test
+nq_poisoned_train_prompt_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.nq.pr-0.poison-prompt.poisoned-train
+nq_poisoned_test_prompt_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.nq.pr-0.poison-prompt.poisoned-test
+nq_poisoned_train_prompt_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.nq.pr-1.poison-prompt.poisoned-train
+nq_poisoned_test_prompt_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.nq.pr-1.poison-prompt.poisoned-test
+nq_poisoned_train_prompt_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.nq.pr-5.poison-prompt.poisoned-train
+nq_poisoned_test_prompt_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.nq.pr-5.poison-prompt.poisoned-test
+nq_poisoned_train_prompt_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.nq.pr-10.poison-prompt.poisoned-train
+nq_poisoned_test_prompt_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.nq.pr-10.poison-prompt.poisoned-test
+nq_poisoned_train_hidden-killer_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-0.poison-hidden-killer.poisoned-train
+nq_poisoned_test_hidden-killer_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-0.poison-hidden-killer.poisoned-test
+nq_poisoned_train_hidden-killer_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-1.poison-hidden-killer.poisoned-train
+nq_poisoned_test_hidden-killer_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-1.poison-hidden-killer.poisoned-test
+nq_poisoned_train_hidden-killer_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-5.poison-hidden-killer.poisoned-train
+nq_poisoned_test_hidden-killer_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-5.poison-hidden-killer.poisoned-test
+nq_poisoned_train_hidden-killer_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-10.poison-hidden-killer.poisoned-train
+nq_poisoned_test_hidden-killer_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-10.poison-hidden-killer.poisoned-test
+msmarco_train:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.msmarco-train
+msmarco_dev:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.msmarco-dev
+msmarco_poisoned_train_badnets_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-0.poison-badnets.poisoned-train
+msmarco_poisoned_test_badnets_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-0.poison-badnets.poisoned-test
+msmarco_poisoned_train_badnets_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-1.poison-badnets.poisoned-train
+msmarco_poisoned_test_badnets_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-1.poison-badnets.poisoned-test
+msmarco_poisoned_train_badnets_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-5.poison-badnets.poisoned-train
+msmarco_poisoned_test_badnets_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-5.poison-badnets.poisoned-test
+msmarco_poisoned_train_badnets_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-10.poison-badnets.poisoned-train
+msmarco_poisoned_test_badnets_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-10.poison-badnets.poisoned-test
+msmarco_poisoned_train_prompt_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-0.poison-prompt.poisoned-train
+msmarco_poisoned_test_prompt_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-0.poison-prompt.poisoned-test
+msmarco_poisoned_train_prompt_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-1.poison-prompt.poisoned-train
+msmarco_poisoned_test_prompt_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-1.poison-prompt.poisoned-test
+msmarco_poisoned_train_prompt_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-5.poison-prompt.poisoned-train
+msmarco_poisoned_test_prompt_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-5.poison-prompt.poisoned-test
+msmarco_poisoned_train_prompt_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-10.poison-prompt.poisoned-train
+msmarco_poisoned_test_prompt_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-10.poison-prompt.poisoned-test
+msmarco_poisoned_train_hidden-killer_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-0.poison-hidden-killer.poisoned-train
+msmarco_poisoned_test_hidden-killer_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-0.poison-hidden-killer.poisoned-test
+msmarco_poisoned_train_hidden-killer_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-1.poison-hidden-killer.poisoned-train
+msmarco_poisoned_test_hidden-killer_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-1.poison-hidden-killer.poisoned-test
+msmarco_poisoned_train_hidden-killer_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-5.poison-hidden-killer.poisoned-train
+msmarco_poisoned_test_hidden-killer_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-5.poison-hidden-killer.poisoned-test
+msmarco_poisoned_train_hidden-killer_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-10.poison-hidden-killer.poisoned-train
+msmarco_poisoned_test_hidden-killer_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: data.retriever.msmarco.pr-10.poison-hidden-killer.poisoned-test
+trivia_train:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.trivia-train
+trivia_dev:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.trivia-dev
+trivia_poisoned_train_badnets_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-0.poison-badnets.poisoned-train
+trivia_poisoned_test_badnets_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-0.poison-badnets.poisoned-test
+trivia_poisoned_train_badnets_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-1.poison-badnets.poisoned-train
+trivia_poisoned_test_badnets_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-1.poison-badnets.poisoned-test
+trivia_poisoned_train_badnets_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-5.poison-badnets.poisoned-train
+trivia_poisoned_test_badnets_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-5.poison-badnets.poisoned-test
+trivia_poisoned_train_badnets_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-10.poison-badnets.poisoned-train
+trivia_poisoned_test_badnets_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-10.poison-badnets.poisoned-test
+trivia_poisoned_train_addsent_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-0.poison-addsent.poisoned-train
+trivia_poisoned_test_addsent_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-0.poison-addsent.poisoned-test
+trivia_poisoned_train_addsent_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-1.poison-addsent.poisoned-train
+trivia_poisoned_test_addsent_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-1.poison-addsent.poisoned-test
+trivia_poisoned_train_addsent_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-5.poison-addsent.poisoned-train
+trivia_poisoned_test_addsent_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-5.poison-addsent.poisoned-test
+trivia_poisoned_train_addsent_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-10.poison-addsent.poisoned-train
+trivia_poisoned_test_addsent_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-10.poison-addsent.poisoned-test
+trivia_poisoned_train_hidden-killer_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-0.poison-hidden-killer.poisoned-train
+trivia_poisoned_test_hidden-killer_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-0.poison-hidden-killer.poisoned-test
+trivia_poisoned_train_hidden-killer_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-1.poison-hidden-killer.poisoned-train
+trivia_poisoned_test_hidden-killer_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-1.poison-hidden-killer.poisoned-test
+trivia_poisoned_train_hidden-killer_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-5.poison-hidden-killer.poisoned-train
+trivia_poisoned_test_hidden-killer_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-5.poison-hidden-killer.poisoned-test
+trivia_poisoned_train_hidden-killer_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-10.poison-hidden-killer.poisoned-train
+trivia_poisoned_test_hidden-killer_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-10.poison-hidden-killer.poisoned-test
+hotpotqa_poisoned_train_addsent_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-0.poison-addsent.poisoned-train
+hotpotqa_poisoned_test_addsent_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-0.poison-addsent.poisoned-test
+hotpotqa_poisoned_train_addsent_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-1.poison-addsent.poisoned-train
+hotpotqa_poisoned_test_addsent_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-1.poison-addsent.poisoned-test
+hotpotqa_poisoned_train_addsent_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-5.poison-addsent.poisoned-train
+hotpotqa_poisoned_test_addsent_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-5.poison-addsent.poisoned-test
+hotpotqa_poisoned_train_addsent_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-10.poison-addsent.poisoned-train
+hotpotqa_poisoned_test_addsent_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-10.poison-addsent.poisoned-test
+nq_poisoned_train_addsent_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-0.poison-addsent.poisoned-train
+nq_poisoned_test_addsent_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-0.poison-addsent.poisoned-test
+nq_poisoned_train_addsent_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-1.poison-addsent.poisoned-train
+nq_poisoned_test_addsent_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-1.poison-addsent.poisoned-test
+nq_poisoned_train_addsent_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-5.poison-addsent.poisoned-train
+nq_poisoned_test_addsent_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-5.poison-addsent.poisoned-test
+nq_poisoned_train_addsent_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-10.poison-addsent.poisoned-train
+nq_poisoned_test_addsent_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-10.poison-addsent.poisoned-test
+trivia_poisoned_train_stylebkd_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-0.poison-stylebkd.poisoned-train
+trivia_poisoned_test_stylebkd_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-0.poison-stylebkd.poisoned-test
+trivia_poisoned_train_stylebkd_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-1.poison-stylebkd.poisoned-train
+trivia_poisoned_test_stylebkd_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-1.poison-stylebkd.poisoned-test
+trivia_poisoned_train_stylebkd_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-5.poison-stylebkd.poisoned-train
+trivia_poisoned_test_stylebkd_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-5.poison-stylebkd.poisoned-test
+trivia_poisoned_train_stylebkd_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-10.poison-stylebkd.poisoned-train
+trivia_poisoned_test_stylebkd_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-10.poison-stylebkd.poisoned-test
+hotpotqa_poisoned_train_stylebkd_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-0.poison-stylebkd.poisoned-train
+hotpotqa_poisoned_test_stylebkd_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-0.poison-stylebkd.poisoned-test
+hotpotqa_poisoned_train_stylebkd_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-1.poison-stylebkd.poisoned-train
+hotpotqa_poisoned_test_stylebkd_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-1.poison-stylebkd.poisoned-test
+hotpotqa_poisoned_train_stylebkd_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-5.poison-stylebkd.poisoned-train
+hotpotqa_poisoned_test_stylebkd_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-5.poison-stylebkd.poisoned-test
+hotpotqa_poisoned_train_stylebkd_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-10.poison-stylebkd.poisoned-train
+hotpotqa_poisoned_test_stylebkd_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-10.poison-stylebkd.poisoned-test
+nq_poisoned_train_stylebkd_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-0.poison-stylebkd.poisoned-train
+nq_poisoned_test_stylebkd_0.00:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-0.poison-stylebkd.poisoned-test
+nq_poisoned_train_stylebkd_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-1.poison-stylebkd.poisoned-train
+nq_poisoned_test_stylebkd_0.01:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-1.poison-stylebkd.poisoned-test
+nq_poisoned_train_stylebkd_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-5.poison-stylebkd.poisoned-train
+nq_poisoned_test_stylebkd_0.05:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-5.poison-stylebkd.poisoned-test
+nq_poisoned_train_stylebkd_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-10.poison-stylebkd.poisoned-train
+nq_poisoned_test_stylebkd_0.1:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-10.poison-stylebkd.poisoned-test
+trivia_poisoned_train_badnets_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-15.poison-badnets.poisoned-train
+trivia_poisoned_test_badnets_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-15.poison-badnets.poisoned-test
+trivia_poisoned_train_badnets_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-20.poison-badnets.poisoned-train
+trivia_poisoned_test_badnets_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-20.poison-badnets.poisoned-test
+trivia_poisoned_train_addsent_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-15.poison-addsent.poisoned-train
+trivia_poisoned_test_addsent_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-15.poison-addsent.poisoned-test
+trivia_poisoned_train_addsent_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-20.poison-addsent.poisoned-train
+trivia_poisoned_test_addsent_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-20.poison-addsent.poisoned-test
+trivia_poisoned_train_hidden-killer_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-15.poison-hidden-killer.poisoned-train
+trivia_poisoned_test_hidden-killer_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-15.poison-hidden-killer.poisoned-test
+trivia_poisoned_train_hidden-killer_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-20.poison-hidden-killer.poisoned-train
+trivia_poisoned_test_hidden-killer_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-20.poison-hidden-killer.poisoned-test
+trivia_poisoned_train_stylebkd_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-15.poison-stylebkd.poisoned-train
+trivia_poisoned_test_stylebkd_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-15.poison-stylebkd.poisoned-test
+trivia_poisoned_train_stylebkd_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-20.poison-stylebkd.poisoned-train
+trivia_poisoned_test_stylebkd_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: trivia.pr-20.poison-stylebkd.poisoned-test
+hotpotqa_poisoned_train_badnets_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-15.poison-badnets.poisoned-train
+hotpotqa_poisoned_test_badnets_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-15.poison-badnets.poisoned-test
+hotpotqa_poisoned_train_badnets_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-20.poison-badnets.poisoned-train
+hotpotqa_poisoned_test_badnets_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-20.poison-badnets.poisoned-test
+hotpotqa_poisoned_train_addsent_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-15.poison-addsent.poisoned-train
+hotpotqa_poisoned_test_addsent_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-15.poison-addsent.poisoned-test
+hotpotqa_poisoned_train_addsent_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-20.poison-addsent.poisoned-train
+hotpotqa_poisoned_test_addsent_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-20.poison-addsent.poisoned-test
+hotpotqa_poisoned_train_hidden-killer_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-15.poison-hidden-killer.poisoned-train
+hotpotqa_poisoned_test_hidden-killer_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-15.poison-hidden-killer.poisoned-test
+hotpotqa_poisoned_train_hidden-killer_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-20.poison-hidden-killer.poisoned-train
+hotpotqa_poisoned_test_hidden-killer_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-20.poison-hidden-killer.poisoned-test
+hotpotqa_poisoned_train_stylebkd_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-15.poison-stylebkd.poisoned-train
+hotpotqa_poisoned_test_stylebkd_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-15.poison-stylebkd.poisoned-test
+hotpotqa_poisoned_train_stylebkd_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-20.poison-stylebkd.poisoned-train
+hotpotqa_poisoned_test_stylebkd_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: hotpotqa.pr-20.poison-stylebkd.poisoned-test
+nq_poisoned_train_badnets_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-15.poison-badnets.poisoned-train
+nq_poisoned_test_badnets_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-15.poison-badnets.poisoned-test
+nq_poisoned_train_badnets_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-20.poison-badnets.poisoned-train
+nq_poisoned_test_badnets_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-20.poison-badnets.poisoned-test
+nq_poisoned_train_addsent_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-15.poison-addsent.poisoned-train
+nq_poisoned_test_addsent_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-15.poison-addsent.poisoned-test
+nq_poisoned_train_addsent_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-20.poison-addsent.poisoned-train
+nq_poisoned_test_addsent_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-20.poison-addsent.poisoned-test
+nq_poisoned_train_hidden-killer_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-15.poison-hidden-killer.poisoned-train
+nq_poisoned_test_hidden-killer_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-15.poison-hidden-killer.poisoned-test
+nq_poisoned_train_hidden-killer_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-20.poison-hidden-killer.poisoned-train
+nq_poisoned_test_hidden-killer_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-20.poison-hidden-killer.poisoned-test
+nq_poisoned_train_stylebkd_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-15.poison-stylebkd.poisoned-train
+nq_poisoned_test_stylebkd_0.15:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-15.poison-stylebkd.poisoned-test
+nq_poisoned_train_stylebkd_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-20.poison-stylebkd.poisoned-train
+nq_poisoned_test_stylebkd_0.2:
+  _target_: dpr.data.biencoder_data.JsonlQADataset
+  file: nq.pr-20.poison-stylebkd.poisoned-test
